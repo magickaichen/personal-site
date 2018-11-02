@@ -1,5 +1,6 @@
 # Personal Site
 **(Work in Progress)** The new personal site using react and Semantic UI
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
