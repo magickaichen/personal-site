@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import PropTypes from 'prop-types';
+import { List } from "semantic-ui-react";
 
 const styles = {
   entry: {
@@ -12,6 +13,12 @@ const styles = {
 };
 
 function ResumeItem(props) {
+  let descList = (props.desc.length > 0) ?
+  <List style={styles.entry} bulleted>
+  {props.desc.map((descItem, i) => (
+    <List.Item key={i}>{descItem.item}</List.Item>
+  ))}
+  </List> : '';
   return (
     <React.Fragment>
       <p style={styles.entry}>
@@ -23,6 +30,7 @@ function ResumeItem(props) {
         <span>{props.position}</span>
         <span style={{float: 'right'}}>{props.time}</span>
       </p>
+      {descList}
       {props.children}
     </React.Fragment>
   );
