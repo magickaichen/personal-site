@@ -1,9 +1,13 @@
 import React, { Component } from 'react';
-import { Header } from 'semantic-ui-react';
+import { Header, Segment } from 'semantic-ui-react';
 
 function BioPage(props) {
   return (
-    <Header as='h2'>Bio</Header>
+    <React.Fragment>
+      <Segment>
+        <Header as='h2'>Bio</Header>
+      </Segment>
+    </React.Fragment>
   );
 }
 

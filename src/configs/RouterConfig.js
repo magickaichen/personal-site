@@ -1,8 +1,8 @@
 import AboutPage from "../pages/About";
 import BioPage from "../pages/sub-pages/BioPage";
 import ResumePage from "../pages/sub-pages/Resume";
-import ThingsPage from "../pages/sub-pages/Things";
 import PortfolioPage from "../pages/Portfolio";
+import StatsPage from "../pages/sub-pages/Stats";
 
 
 const RouteConfig = [
@@ -19,8 +19,8 @@ const RouteConfig = [
         component: ResumePage
       },
       {
-        path: "/home/fun-things",
-        component: ThingsPage
+        path: "/home/stats",
+        component: StatsPage
       }
     ]
   },

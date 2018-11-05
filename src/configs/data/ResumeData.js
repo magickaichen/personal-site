@@ -14,6 +14,13 @@ const ResumeData = {
       time: "Aug 2013 - May 2018",
       desc: []
     },
+    {
+      orgName: "The Hong Kong University of Science and Technology",
+      location: "Kowloon, Hong Kong",
+      position: "Visiting Student - MSU Engineering Exchange Program",
+      time: "Aug 2015 - Dec 2015",
+      desc: []
+    },
   ],
   Experiences: [
     {

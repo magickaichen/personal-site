@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 const routerMap = {
   "bio": "bio",
   "resume": "resume",
-  "fun-things" : "fun-things"
+  "stats" : "stats"
 }
 
 class SideMenu extends Component {
@@ -35,8 +35,8 @@ class SideMenu extends Component {
             name='resume' active={activeItem === 'resume'} 
             onClick={this.handleMenuClick} />
           <Menu.Item
-            as={Link} to="/home/fun-things"
-            name='fun-things' active={activeItem === 'fun-things'}
+            as={Link} to="/home/stats"
+            name='stats' active={activeItem === 'stats'}
             onClick={this.handleMenuClick}
           />
         </Menu>
