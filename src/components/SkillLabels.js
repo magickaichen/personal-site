@@ -8,7 +8,7 @@ class SkillLabels extends Component {
   render() {
     return (
       <React.Fragment>
-        <List horizontal relaxed='very'>
+        <List horizontal divided relaxed='very'>
           <List.Item>
             <Image avatar src={jslogo}/>
             <List.Content>
