@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Header, Segment } from 'semantic-ui-react';
+import { Header, Segment, Icon } from 'semantic-ui-react';
 import ResumeItem from '../../components/ResumeItem';
 import ResumeData from '../../configs/data/ResumeData';
 import ResumeMiscItem from '../../components/ResumeMiscItem';
@@ -14,7 +14,10 @@ function ResumePage(props) {
   return (
     <React.Fragment>
       <Segment>
-        <Header as='h2' dividing>Education</Header>
+        <Header as='h2' dividing>
+          <span><Icon circular name='graduation cap' /></span>
+          Education
+        </Header>
         {ResumeData.Education.map((entry, i) => (
           <ResumeItem
             key = {i}
@@ -25,7 +28,10 @@ function ResumePage(props) {
             desc = {entry.desc}
           />
         ))}
-        <Header as='h2' styles={styles.contDivHeader} dividing>Experiences</Header>
+        <Header as='h2' dividing>
+          <span><Icon circular name='briefcase'/></span>
+          Experiences
+        </Header>
         {ResumeData.Experiences.map((entry, i) => (
           <ResumeItem
             key = {i}
@@ -36,7 +42,10 @@ function ResumePage(props) {
             desc = {entry.desc}
           />
         ))}
-        <Header as='h2' styles={styles.contDivHeader} dividing>Activities</Header>
+        <Header as='h2' dividing>
+          <span><Icon circular name='quidditch' /></span>
+          Activities
+        </Header>
         {ResumeData.Activities.map((entry, i) => (
           <ResumeMiscItem
             key={i}
