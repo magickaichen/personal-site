@@ -12,11 +12,15 @@ class SkillLabels extends Component {
     return (
       <React.Fragment>
         <Grid columns={5} padded>
-          {skills.map((skill, i) => (
-            <Grid.Column key={i}>
-              <SkillItem src={skill.src} name={skill.name} key={i}/>
-            </Grid.Column>
-          ))}
+          {skills.map((skill, i) => {
+            if (this.props.filter === 'all' || skill.type.includes(this.props.filter)) {
+              return (
+                <Grid.Column key={i}>
+                  <SkillItem src={skill.src} name={skill.name} key={i}/>
+                </Grid.Column>
+              )
+            }
+          })}
         </Grid>
       </React.Fragment>
     );
