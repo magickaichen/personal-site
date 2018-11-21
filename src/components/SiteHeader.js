@@ -7,7 +7,7 @@ class SiteHeader extends Component {
       <React.Fragment>
         <div />
         <Header as="h1" icon textAlign="center">
-          <Icon name="code" />
+          <Icon name="anchor"/>
           Mike Xiao
           <Header.Subheader>Write Code & Build Awesome</Header.Subheader>
         </Header>
