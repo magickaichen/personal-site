@@ -3,7 +3,7 @@ import { Menu, Icon, Header, Container, Segment } from "semantic-ui-react";
 import SkillLabels from "./SkillLabels";
 
 class SkillsTab extends Component {
-  state = { activeItem: 'closest' }
+  state = { activeItem: 'all' }
   
   setActiveItem = (name) => this.setState({ activeItem: name });
   handleMenuClick = (e, { name }) => this.setActiveItem(name);
@@ -46,7 +46,7 @@ class SkillsTab extends Component {
             </Menu.Item>
           </Menu>
           <Container>
-            <SkillLabels />
+            <SkillLabels filter={activeItem} />
           </Container>
         </Segment>
       </React.Fragment>

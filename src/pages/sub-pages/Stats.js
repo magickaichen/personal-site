@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Header, Segment, List, Icon } from "semantic-ui-react";
+import { Header, Segment } from "semantic-ui-react";
 import moment from "moment";
 import SelfStatsTable from "../../components/tables/SelfStatsTable";
 import SkillsTab from "../../components/SkillsTab";

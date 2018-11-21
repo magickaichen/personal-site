@@ -1,33 +1,23 @@
 import React, { Component } from 'react';
-import { Image, List } from 'semantic-ui-react';
-import jslogo from '../images/logos/js.png';
-import pylogo from '../images/logos/python.png';
-import reactlogo from '../images/logos/react.png'
+import { Grid } from 'semantic-ui-react';
+
+import SkillItem from './addons/SkillItem';
+import SkillsData from '../configs/data/SkillsData';
+
+const skills = SkillsData;
 class SkillLabels extends Component {
   state = {}
   render() {
+    console.log(this.props.filter);
     return (
       <React.Fragment>
-        <List horizontal divided relaxed='very'>
-          <List.Item>
-            <Image avatar src={jslogo}/>
-            <List.Content>
-              <List.Header>JavaScript</List.Header>
-            </List.Content>
-          </List.Item>
-          <List.Item>
-            <Image avatar src={pylogo}/>
-            <List.Content>
-              <List.Header>Python</List.Header>
-            </List.Content>
-          </List.Item>
-          <List.Item>
-            <Image avatar src={reactlogo}/>
-            <List.Content>
-              <List.Header>React</List.Header>
-            </List.Content>
-          </List.Item>
-        </List>
+        <Grid columns={5} padded>
+          {skills.map((skill, i) => (
+            <Grid.Column key={i}>
+              <SkillItem src={skill.src} name={skill.name} key={i}/>
+            </Grid.Column>
+          ))}
+        </Grid>
       </React.Fragment>
     );
   }
