@@ -3,6 +3,7 @@ import BioPage from "../pages/sub-pages/BioPage";
 import ResumePage from "../pages/sub-pages/Resume";
 import PortfolioPage from "../pages/Portfolio";
 import StatsPage from "../pages/sub-pages/Stats";
+import ContactPage from "../pages/Contact";
 
 
 const RouteConfig = [
@@ -27,6 +28,10 @@ const RouteConfig = [
   {
     path: "/portfolio",
     component: PortfolioPage
+  },
+  {
+    path: "/contact",
+    component: ContactPage
   }
 ]
 

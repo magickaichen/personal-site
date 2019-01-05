@@ -38,8 +38,7 @@ class HeaderMenu extends Component {
             <Icon name="external alternate" /> Blog
           </Menu.Item>
           <Menu.Menu position="right">
-            <Menu.Item
-              name="contact"
+            <Menu.Item as={Link} to='/contact' name="contact"
               active={activeItem === "contact"}
               onClick={this.handleMenuClick}
             />
