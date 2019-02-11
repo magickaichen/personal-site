@@ -3,6 +3,7 @@ import { Header, Segment } from "semantic-ui-react";
 import moment from "moment";
 import SelfStatsTable from "../../components/tables/SelfStatsTable";
 import SkillsTab from "../../components/SkillsTab";
+import ActivitesTab from "../../components/ActivitesTab";
 
 class StatsPage extends Component {
   state = {};
@@ -20,6 +21,7 @@ class StatsPage extends Component {
             My Skills
           </Header>
           <SkillsTab />
+          <ActivitesTab />
         </Segment>
       </React.Fragment>
     );

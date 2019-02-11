@@ -67,7 +67,7 @@ const ResumeData = {
     },
   ],
   Activities: [
-    {Hackathons: "SpartaHack 2015 (As Volunteer), SpartaHack 2016-2018 (As Hacker), MHack 2017 (As Hacker)"},
+    {Hackathons: "SpartaHack 2015 (As Volunteer), SpartaHack 2016-2018 (As Hacker), MHacks 9 (As Hacker)"},
     {Clubs: "SpartaSoft GameDev Club, Spartan Hackers"}
   ]
 }
