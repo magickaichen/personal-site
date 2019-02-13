@@ -11,7 +11,7 @@ class SkillLabels extends Component {
     console.log(this.props.filter);
     return (
       <React.Fragment>
-        <Grid columns={5} padded>
+        <Grid columns={5} padded stackable>
           {skills.map((skill, i) => {
             if (this.props.filter === 'all' || skill.type.includes(this.props.filter)) {
               return (

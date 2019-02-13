@@ -13,7 +13,7 @@ class SkillsTab extends Component {
     return (
       <React.Fragment>
         <Segment color='blue'>
-          <Menu text secondary>
+          <Menu text secondary stackable>
             <Menu.Item header>Filter By</Menu.Item>
             <Menu.Item
               name='all'

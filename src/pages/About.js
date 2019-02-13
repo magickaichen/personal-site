@@ -7,7 +7,7 @@ class AboutPage extends Component {
   routes = this.props.routes;
   render() {
     return (
-      <Grid>
+      <Grid stackable>
         <Grid.Column width={4}>
           <React.Fragment>
             <SideMenu />
