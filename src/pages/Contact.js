@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Header, Segment, Icon } from "semantic-ui-react";
+import { Header, Segment, Icon, Responsive } from "semantic-ui-react";
 import { Button, Divider, Form, Grid, List } from "semantic-ui-react";
 import { Input, TextArea } from "semantic-ui-react";
 
@@ -38,7 +38,7 @@ function ContactPage(props) {
               <Button content="Send!" primary />
             </Form>
           </Grid.Column>
-
+          <Responsive as={Divider} horizontal maxWidth={767}>Or</Responsive>
           <Grid.Column verticalAlign="top">
             <Header
             content='Contact me via'/>
@@ -74,7 +74,7 @@ function ContactPage(props) {
           </Grid.Column>
         </Grid>
 
-        <Divider vertical>Or</Divider>
+        <Responsive as={Divider} vertical minWidth={768}>Or</Responsive>
       </Segment>
     </React.Fragment>
   );
